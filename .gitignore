@@ -4,3 +4,7 @@
 *.jar
 *.war
 *.ear
+
+# Properties Files #
+build.*.properties
+app.server.*.properties
