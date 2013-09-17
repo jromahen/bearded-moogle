@@ -8,3 +8,4 @@
 # Properties Files #
 build.*.properties
 app.server.*.properties
+!build.liferay.properties ## Needed for the production user
