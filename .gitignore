@@ -11,7 +11,9 @@
 # Properties Files #
 build.*.properties
 app.server.*.properties
-!build.liferay.properties ## Needed for the production user
+
+## Needed for the production user
+!build.liferay.properties
 
 # Mac files #
 .DS_Store
