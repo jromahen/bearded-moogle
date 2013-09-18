@@ -17,3 +17,9 @@ app.server.*.properties
 
 # Mac files #
 .DS_Store
+
+# Temp files #
+*.*~
+*.*#
+.*~
+.*#
