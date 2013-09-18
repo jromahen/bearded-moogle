@@ -1,0 +1,15 @@
+$linkColor: rgb(205,206,192);
+$linkColorHover: rgb(180,182,160);
+
+$btnPrimaryBackground: darken(rgb(83,145,170), 20);
+$btnPrimaryBackgroundHighlight: rgb(83,145,170);
+
+$infoText: rgb(83,145,170);
+
+$navbarBackground: lighten(rgb(205,206,192), 10);
+$navbarBackgroundHighlight: rgb(205,206,192);
+$navbarBorder: rgb(83,145,170);
+$navbarLinkBackgroundActive: lighten($navbarBackground, 25%);
+$navbarLinkColor: $infoText;
+$navbarLinkColorHover: $linkColorHover;
+$navbarText: $navbarLinkColor;

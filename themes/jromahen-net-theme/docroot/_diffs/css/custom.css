@@ -1,0 +1,222 @@
+/* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
+@import "compass";
+
+/***** Global Styles ****/
+/*
+   The colour palette is designed to have contrasting ond complementary pairs.
+
+   The following colours must have good contrast:
+
+            lightBgColour VS. darkBgColour
+            *highlightColour VS. shadowColour
+
+   The following colours are closely complementary:
+  
+            lightHighlightColour AND darkHighlightColour
+
+   Follow these principles when assigning colours for the greatest effect.
+*/
+/*$lightBgColour: rgb(255,255,255);
+$darkBgColour: rgb(83,145,170);
+$lightHighlightColour: rgb(205,206,192);
+$darkHighlightColour: rgb(180,182,160); 
+$shadowColour: rgb(84,94,82);
+
+.aui {
+    * {
+    color: $darkBgColour;
+    }
+
+    a {
+	color: $lightHighlightColour;
+	
+	&:hover {
+	    color: $darkHighlightColour;
+	}
+    }
+
+    .btn-primary {
+	background: {
+	    color: $darkBgColour;
+	    image: linear-gradient(to bottom, lighten($darkBgColour, 20), $darkBgColour);
+	}
+
+	&:hover {
+	    background-color: $darkBgColour;
+	}
+    }
+
+
+    nav#breadcrumbs > .breadcrumb {
+	background-color: $lightBgColour;
+	color: $darkBgColour;
+	margin: 0;
+
+	a {
+	    color: $darkBgColour;
+	}
+
+	> li {
+	    @include text-shadow($shadowColour 0 1px 0);
+	}
+    }
+
+
+    .navbar {
+
+	background: {
+	    color: $lightBgColour;
+	    image: linear-gradient(to bottom, lighten($lightHighlightColour, 10), $lightHighlightColour);
+	}
+
+	.active {
+	    background-color: $darkHighlightColour;
+	}
+
+	.divider-vertical {
+	    border: {
+		left: 1px solid lighten($darkHighlightColour, 20);
+		right: 1px solid $darkHighlightColour;
+	    }
+	}
+	
+	.nav  > .active {
+	    > a {
+		@extend .active;
+		
+		&:hover, &:focus {
+		    @extend .active;
+		}
+	    }
+	}
+
+	.nav > li {
+	    @include text-shadow(lighten($shadowColour, 50) 0 1px 0);
+
+	    a, span {
+		@include text-shadow(lighten($shadowColour, 50) 0 1px 0);
+
+		color: $shadowColour;
+
+		&:hover {
+		    color: $darkBgColour;
+		}
+	    }
+
+	    &.dropdown.active > .dropdown-toggle {
+		@extend .active;
+	    }
+
+	    > .dropdown-menu{
+		background-color: $lightHighlightColour;
+		
+		&:after {
+		    border-bottom: 6px solid $lightHighlightColour;
+		}
+
+		.active  > a {
+		    @extend .active;
+
+		    background-image: linear-gradient(to bottom, lighten($darkHighlightColour, 10), $darkHighlightColour);
+		}
+
+		> li a:hover {
+		    background-image: linear-gradient(to bottom, lighten($darkHighlightColour, 10), $darkHighlightColour);
+		}
+	    }
+	}
+
+	.brand {
+	    @include text-shadow(lighten($shadowColour, 50) 0 1px 0);
+	}
+
+	.btn-navbar {
+	    @extend .btn-primary;
+	}
+
+	.dropdown:hover > .child-menu {
+	    display: block;
+	}
+
+	.collapse.in {
+	    overflow: auto;
+	    height: auto;
+
+	    .child-menu {
+		display: block;
+	    }
+	}
+    }
+
+    .navbar-inverse {
+	color: $lightHighlightColour;
+
+	background: {
+	    color: $darkBgColour;
+
+	    image: linear-gradient(to bottom, $darkBgColour, darken($darkBgColour, 10));
+	}
+
+	.divider-vertical {
+	    border: {
+		left: 1px solid $darkBgColour;
+		right: 1px solid darken($darkBgColour, 20);
+	    }
+	}
+	
+	.navbar-inner {
+	    @extend .navbar-inverse;
+	}
+
+	li {
+	    > a, span {
+		color: $lightHighlightColour;
+
+		&:hover {
+		    color: $lightBgColour;
+		}
+	    }
+
+	    .dropdown-menu {
+		a, span { 
+		    color: $darkBgColour;
+
+		    &:hover {
+			color: $darkBgColour;
+		    }
+		}
+	    }
+	}
+    }
+
+
+    .portlet {
+	.portlet-topper {
+	    .portlet-title .icon {
+		display: none;
+		margin: 0;
+	    }
+
+	    .lead {
+		margin-bottom: 0;
+	    }
+
+	    padding: 0;
+	}
+
+    }
+
+  
+    #footer {
+	background-color: $darkBgColour;
+	color: $lightBgColour;
+	min-height: 100%;
+	margin-bottom: 0;
+
+	.powered-by {
+	    p, small {
+		@extend #footer;
+	    }
+	}
+    }
+}*/
