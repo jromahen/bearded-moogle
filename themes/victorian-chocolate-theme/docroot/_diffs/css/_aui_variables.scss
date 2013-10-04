@@ -1,3 +1,10 @@
+$lightBgColour: rgb(255,255,255);
+$darkBgColour: rgb(83,145,170);
+$lightHighlightColour: rgb(205,206,192);
+$darkHighlightColour: rgb(180,182,160); 
+$shadowColour: rgb(84,94,82);
+
+
 $linkColor: rgb(205,206,192);
 $linkColorHover: rgb(180,182,160);
 
@@ -8,14 +15,14 @@ $infoText: rgb(83,145,170);
 
 $navbarBackground: lighten(rgb(205,206,192), 10);
 $navbarBackgroundHighlight: rgb(205,206,192);
-$navbarBorder:  rgb(83,145,170);
-$navbarLinkBackgroundActive: lighten($navbarBackground, 25%);
+$navbarBorder:  $lightBgColour;
+$navbarLinkBackgroundActive: $darkHighlightColour;
 $navbarLinkColor: $infoText;
 $navbarLinkColorHover: $linkColorHover;
 $navbarText: $navbarLinkColor;
 
-$gray: #555;
-$white: #FFF;
+$gray: $darkBgColour;
+$white: #fff;
 
 $baseBorderRadius: 2px;
 $borderRadiusLarge: 3px;
