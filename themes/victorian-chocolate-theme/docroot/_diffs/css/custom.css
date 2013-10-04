@@ -2,6 +2,9 @@
 @import "aui_variables";
 
 .aui {
+
+/******Navigation**************/
+
     .navbar {
 	.in {
 	    height: auto;
@@ -9,20 +12,81 @@
     }
 
 
-    .portlet-boundary {
-	@include box-shadow(0 0 10px $darkBgColour);
+    .dockbar .navbar-inner {
+	background: {
+	    color: $contrastColour;
+	    image: linear-gradient(to bottom, $contrastHighlight, darken($contrastHighlight, 20));
+	}
 
-	border-radius: 5px;
+	color: $primaryHighlight;
 
-	.page-header {
-	    padding: {
-		bottom: 0;
-		left: 8px;
+	.divider-vertical {
+	    border: {
+		left: $contrastColour;
+		right: darken($contrastColour, 20);
 	    }
 	}
 
+	li.dropdown.open > .dropdown-toggle,
+	.dropdown.open a,
+	ul > li > a {
+	    color: $primaryHighlight;
+	    text-shadow: none;
+
+	    &:hover {
+		background-color: $contrastColour;
+		color: $primaryHighlight;
+	    }
+
+	    .active {
+		background-color: $contrastColour;
+	    }
+	}
+    }
+
+
+/*******Portlet************/
+
+    .colorise {
+	.page-header {
+	    background-color: $primaryColour;
+	}
+    }
+
+    .portlet-boundary {
+	@include box-shadow(0 0 10px rgba($primaryColour,0.5));
+
+	border-radius: 5px;
+    }
+
+    .page-header {
+	padding: {
+	    bottom: 0;
+	    left: 8px;
+	}
+ 
 	.portlet-title-text {
 	    vertical-align: middle;
+	}
+    }
+
+    .portlet-login .navigation {
+	background-color: $accentLight;
+	border-top: $shadowColour;
+
+	a {
+	    color: $primaryHighlight;	
+	    
+	    &:hover {
+		color: $accentDark;
+	    }
+	}
+    }
+
+    .portlet-column {
+	&.yui3-dd-drop-over {
+	    background-color: rgba($shadowColour, 0.2);
+	    border-radius: 2px;
 	}
     }
 

@@ -1,39 +1,54 @@
-$lightBgColour: rgb(255,255,255);
-$darkBgColour: rgb(83,145,170);
-$lightHighlightColour: rgb(205,206,192);
-$darkHighlightColour: rgb(180,182,160); 
+$primaryHighlight: rgb(255,255,255);
+$primaryColour: rgb(83,145,170);
+
+$contrastColour: rgb(88,53,26);
+$contrastHighlight: rgb(156,107,65);
+
+$accentLight: rgb(205,206,192);
+$accentDark: rgb(180,182,160); 
+
 $shadowColour: rgb(84,94,82);
 
 // Global Styles
 //--------------------------------------
 $black: rgb(0, 0, 25);
-$grayLighter: $lightHighlightColour;
+$grayLighter: $accentLight;
 
 $textColor: $shadowColour;
-$linkColor: $lightHighlightColour;
-$linkColorHover: $darkHighlightColour;
+$linkColor: $accentLight;
+$linkColorHover: $accentDark;
 
 // Components
 //-------------------------------------- 
 
 // Dropdown Menus
-$dropdownLinkBackgroundActive: $darkBgColour;
-$dropdownLinkBackgroundHover: $darkBgColour;
+$dropdownLinkBackgroundActive: $primaryColour;
+$dropdownLinkBackgroundHover: $primaryColour;
 
 //Buttons
 //---------------------------------------
-$btnPrimaryBackground: $darkBgColour;
-$btnPrimaryBackgroundHighlight: lighten($darkBgColour, 20);
+$btnPrimaryBackground: $contrastColour;
+$btnPrimaryBackgroundHighlight: lighten($contrastColour, 20);
+
+
+// Dropdown
+//---------------------------------------
+$dropdownBackground: $accentLight;
+$dropdownBorder: rgba($accentDark, 0.2);
+$dropdownDividerTop: $accentDark;
+$dropdownDividerBottom: $accentLight;
+
+$dropdownLinkColor: $linkColor;
 
 // Navigation
-$navbarBackgroundHighlight: $lightHighlightColour;
-$navbarBackground: darken($lightHighlightColour, 10);
+$navbarBackgroundHighlight: $accentLight;
+$navbarBackground: darken($accentLight, 10);
 $navbarBorder: $shadowColour;
 
 $navbarText: $shadowColour;
 $navbarLinkColorHover: $navbarText;
-$navbarLinkBackgroundHover: $lightHighlightColour;
-$navbarLinkBackgroundActive: $darkHighlightColour;
+$navbarLinkBackgroundHover: $accentLight;
+$navbarLinkBackgroundActive: $accentDark;
 
 
-$wellBackground: $darkBgColour;
+$wellBackground: $primaryColour;
