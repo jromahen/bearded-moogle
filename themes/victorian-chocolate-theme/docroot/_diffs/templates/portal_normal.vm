@@ -16,16 +16,9 @@
 
 $theme.include($body_top_include)
 
-<div class="hidden-phone navbar-inverse">
-#if ($is_signed_in)
-	#dockbar()
-#end
-</div> 
-
-## TODO: Add a secondary navbar for phone users
+#dockbar()
 
  <div class="container-fluid" id="wrapper">
-
 	<header id="banner" role="banner" class="row-fluid">
 		<div id="heading" class="page-heading row-fluid"> ## Cleanly break the header from the nav
 			<h1 class="site-title">
@@ -44,8 +37,7 @@ $theme.include($body_top_include)
 			#parse ("$full_templates_path/navigation.vm")
 		#end
 	</header>
-<div class="row-fluid">
-	<div id="content">
+	<div id="content" class="row-fluid">
 		<nav id="breadcrumbs" class="thumbnail">#breadcrumbs()</nav>
 
 		#if ($selectable)
@@ -58,7 +50,6 @@ $theme.include($body_top_include)
 			$theme.wrapPortlet("portlet.vm", $content_include)
 		#end
 	</div>
-</div>
 </div>
 	<footer id="footer" class="well well-large" role="contentinfo">
 	  <div class="row-fluid">

@@ -1,0 +1,32 @@
+@import "compass";
+@import "aui_variables";
+
+.aui {
+    .navbar {
+	.in {
+	    height: auto;
+	}
+    }
+
+
+    .portlet-boundary {
+	@include box-shadow(0 0 10px $darkBgColour);
+
+	border-radius: 5px;
+
+	.page-header {
+	    padding: {
+		bottom: 0;
+		left: 8px;
+	    }
+	}
+
+	.portlet-title-text {
+	    vertical-align: middle;
+	}
+    }
+
+    .well-large {
+	border-radius: 0;
+    }
+}

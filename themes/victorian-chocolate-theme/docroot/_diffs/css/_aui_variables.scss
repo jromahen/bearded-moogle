@@ -4,54 +4,36 @@ $lightHighlightColour: rgb(205,206,192);
 $darkHighlightColour: rgb(180,182,160); 
 $shadowColour: rgb(84,94,82);
 
+// Global Styles
+//--------------------------------------
+$black: rgb(0, 0, 25);
+$grayLighter: $lightHighlightColour;
 
-$linkColor: rgb(205,206,192);
-$linkColorHover: rgb(180,182,160);
+$textColor: $shadowColour;
+$linkColor: $lightHighlightColour;
+$linkColorHover: $darkHighlightColour;
 
-$btnPrimaryBackground: darken(rgb(83,145,170), 20);
-$btnPrimaryBackgroundHighlight: rgb(83,145,170);
+// Components
+//-------------------------------------- 
 
-$infoText: rgb(83,145,170);
+// Dropdown Menus
+$dropdownLinkBackgroundActive: $darkBgColour;
+$dropdownLinkBackgroundHover: $darkBgColour;
 
-$navbarBackground: lighten(rgb(205,206,192), 10);
-$navbarBackgroundHighlight: rgb(205,206,192);
-$navbarBorder:  $lightBgColour;
+//Buttons
+//---------------------------------------
+$btnPrimaryBackground: $darkBgColour;
+$btnPrimaryBackgroundHighlight: lighten($darkBgColour, 20);
+
+// Navigation
+$navbarBackgroundHighlight: $lightHighlightColour;
+$navbarBackground: darken($lightHighlightColour, 10);
+$navbarBorder: $shadowColour;
+
+$navbarText: $shadowColour;
+$navbarLinkColorHover: $navbarText;
+$navbarLinkBackgroundHover: $lightHighlightColour;
 $navbarLinkBackgroundActive: $darkHighlightColour;
-$navbarLinkColor: $infoText;
-$navbarLinkColorHover: $linkColorHover;
-$navbarText: $navbarLinkColor;
 
-$gray: $darkBgColour;
-$white: #fff;
 
-$baseBorderRadius: 2px;
-$borderRadiusLarge: 3px;
-$borderRadiusSmall: 2px;
-
-$btnBackground: #F6F6F6;
-$btnBackgroundHighlight: #EAEAEA;
-$btnBorder: #CFCFCF;
-$btnDangerBackground: #F53924;
-$btnDangerBackgroundHighlight: #ED2C17;
-$btnInfoBackground: #00CFFF;
-$btnInfoBackgroundHighlight: darken($btnInfoBackground, 4%);
-$btnSuccessBackground: #CBDF2E;
-$btnSuccessBackgroundHighlight: #C4D72C;
-$btnWarningBackground: #FFA658;
-$btnWarningBackgroundHighlight: #F49645;
-
-$dropdownLinkBackgroundActive: lighten($linkColor, 5%);
-$dropdownLinkBackgroundHover: darken(#3ECAF4, 10%);
-$dropdownLinkColorActive: $white;
-
-$errorBackground: #FEE5E2;
-$errorBorder: #FCACA5;
-$errorText: #B50303;
-$infoBackground: #CEF1FC;
-$infoBorder: darken($infoBackground, 10%);
-$successBackground: #F5FBD1;
-$successBorder: #D3E830;
-$successText: #8D9D0D;
-$warningBackground: #FFFBDC;
-$warningBorder: #F1D875;
-$warningText: #BF7900;
+$wellBackground: $darkBgColour;
