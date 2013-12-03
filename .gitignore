@@ -23,3 +23,7 @@ app.server.*.properties
 *.*#
 .*~
 .*#
+
+# Ivy
+.ivy/*
+ivy-settings*
