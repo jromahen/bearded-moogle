@@ -53,7 +53,7 @@
 	}
     }
 
-    .portlet-boundary {
+    section.portlet {
 	@include box-shadow(0 0 10px rgba($primaryColour,0.5));
 
 	border-radius: 5px;
@@ -67,6 +67,22 @@
  
 	.portlet-title-text {
 	    vertical-align: middle;
+	}
+    }
+
+    .portlet-borderless-container {
+	margin: 20px 0;
+    }
+
+    .portlet-options {
+	.dropdown-toggle .caret {
+	    display: none;
+	}
+
+	&, &.open {
+	    .dropdown-toggle {
+		@include box-shadow(none);
+	    }
 	}
     }
 
