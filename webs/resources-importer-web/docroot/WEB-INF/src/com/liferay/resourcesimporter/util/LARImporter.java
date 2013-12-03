@@ -30,7 +30,7 @@ import java.util.Map;
 
 /**
  * @author Ryan Park
- * @author Raymond Aug??
+ * @author Raymond Augé
  */
 public class LARImporter extends BaseImporter {
 
@@ -128,9 +128,6 @@ public class LARImporter extends BaseImporter {
 		parameters.put(
 			PortletDataHandlerKeys.PUBLISH_TO_REMOTE,
 			new String[] {Boolean.TRUE.toString()});
-		parameters.put(
-			PortletDataHandlerKeys.THEME,
-			new String[] {Boolean.FALSE.toString()});
 		parameters.put(
 			PortletDataHandlerKeys.THEME_REFERENCE,
 			new String[] {Boolean.TRUE.toString()});

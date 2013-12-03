@@ -39,7 +39,7 @@ import javax.servlet.ServletContext;
 
 /**
  * @author Brian Wing Shun Chan
- * @author Raymond Aug??
+ * @author Raymond Augé
  */
 public abstract class BaseImporter implements Importer {
 

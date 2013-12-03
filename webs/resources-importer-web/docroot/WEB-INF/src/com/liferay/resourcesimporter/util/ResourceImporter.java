@@ -28,7 +28,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * @author Raymond Aug??
+ * @author Raymond Augé
  * @author Ryan Park
  */
 public class ResourceImporter extends FileSystemImporter {
