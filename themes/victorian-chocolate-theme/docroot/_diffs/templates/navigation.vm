@@ -1,0 +1,59 @@
+<nav class="$nav_css_class navbar navbar-inner site-navigation" id="navigation" role="navigation">
+	<a class="brand" href="$site_default_public_url">
+	   $site_name
+	</a>		
+
+	<a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+	   <span class="icon-bar"></span>
+	   <span class="icon-bar"></span>
+	   <span class="icon-bar"></span>
+	</a>
+	
+	<div class="nav-collapse collapse navbar-responsive-collapse">
+	<ul aria-label="#language ("site-pages")" class="nav" role="menubar">
+	    <li class="divider-vertical"></li>
+		#foreach ($nav_item in $nav_items)
+			#if ($nav_item.isSelected())
+			    #set ($aria-selected = 'aria-selected="true"')
+			    #set ($selected = "selected active")
+			#else
+				#set ($aria-selected = '')
+				#set ($selected = "")
+			#end
+
+			#if ($nav_item.hasChildren())
+			    #set ($dropdown = "dropdown")
+			#else
+			    #set ($dropdown = "")
+			#end
+				<li $aria-selected class="$selected $dropdown lfr-nav-item" id="layout_$nav_item.getLayoutId()" role="presentation">
+		
+			#if ($dropdown == "")
+				<a aria-labelledby="layout_$nav_item.getLayoutId()" href="$nav_item.getURL()" $nav_item.getTarget()><span>$nav_item.icon() $nav_item.getName()</span></a>
+			#else
+				<a aria-labelledby="layout_$nav_item.getLayoutId()" href="$nav_item.getURL()" $nav_item.getTarget() class="dropdown-toggle"
+>$nav_item.icon() $nav_item.getName()<b class="caret"></b></a>
+			#end
+				#if ($dropdown == "dropdown")
+				    <ul class="dropdown-menu child-menu" role="menu">
+				    #foreach ($nav_child in $nav_item.getChildren())
+				    	     #if ($nav_child.isSelected())
+					     	 <li aria-selected="true" class="lfr-nav-item selected active" id="layout_${nav_child.getLayoutId()}" role="presentation">
+						 #else
+						<li class="lfr-nav-item" id="layout_${nav_child.getLayoutId()}" role="presentation">
+						#end
+							<a href="${nav_child.getURL()}" ${nav_child.getTarget()}>${nav_child.getName()}</a>
+						</li>
+				    #end
+				    </ul>
+				#end
+			</li>
+		#end
+
+	</ul>
+</div>
+</nav>
+
+<script>
+Liferay.Data.NAV_LIST_SELECTOR = '.nav-collapse > ul';
+</script>
