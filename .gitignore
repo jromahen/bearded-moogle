@@ -5,8 +5,6 @@
 *.war
 *.ear
 
-# Library Exceptions #
-!/lib/*.jar
 
 # Properties Files #
 build.*.properties
