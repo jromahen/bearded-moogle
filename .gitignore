@@ -27,3 +27,4 @@ app.server.*.properties
 # Ivy
 .ivy/*
 ivy-settings*
+ivy.xml.MD5
