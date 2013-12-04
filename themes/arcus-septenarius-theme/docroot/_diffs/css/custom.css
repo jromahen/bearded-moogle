@@ -12,9 +12,11 @@
 	    color: $primaryHighlight;
 	    }
 
-	    .brand {
-		color: $primaryHighlight;
-	    }
+	 
+	}
+
+	.brand {
+	    color: $primaryHighlight;
 	}
 
 	.in {
