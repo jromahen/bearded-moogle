@@ -86,6 +86,7 @@
 	}
     }
 
+
     .portlet-login .navigation {
 	background-color: $accentLight;
 	border-top: $shadowColour;
@@ -106,7 +107,20 @@
 	}
     }
 
+/*****  User Interface Elements ********/
+
     .well-large {
 	border-radius: 0;
     }
+
+    .dropdown-menu > li.portlet-close > a{
+	color: red;
+    }
+
+    .dockbar-user-notifications .user-notifications-count, 
+    .notifications-portlet .user-notifications-count {
+	background-color: $contrastColour;
+	border-color: $contrastColour;
+    }
+    
 }
