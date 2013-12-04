@@ -6,6 +6,17 @@
 /******Navigation**************/
 
     .navbar {
+	.nav > li  {
+	    &> a,
+	    &.active > a {
+	    color: $primaryHighlight;
+	    }
+
+	    .brand {
+		color: $primaryHighlight;
+	    }
+	}
+
 	.in {
 	    height: auto;
 	}
