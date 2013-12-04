@@ -8,13 +8,12 @@ AUI().ready(
 	    }
 
 	    /* This reproduces functionality built into Bootstrap's jQuery plugin */
-	    var navbarToggle = A.one("[data-toggle=collapse]");
+	    var navbarToggle = A.one("a[data-navid=_145_navSiteNavigation]");
 
 	    if (navbarToggle) {
 		navbarToggle.on("click", function (e) {
-		    var targetSelector = this.getAttribute("data-target");
-		    var targetNode = this.next(targetSelector);
-		    
+		    var targetNode = A.one("#navigation .nav-collapse");
+
 		    targetNode.toggleClass("in");
 		}); 
 	    }

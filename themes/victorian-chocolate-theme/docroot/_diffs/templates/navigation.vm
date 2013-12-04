@@ -2,12 +2,6 @@
 	<a class="brand" href="$site_default_public_url">
 	   $site_name
 	</a>		
-
-	<a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
-	   <span class="icon-bar"></span>
-	   <span class="icon-bar"></span>
-	   <span class="icon-bar"></span>
-	</a>
 	
 	<div class="nav-collapse collapse navbar-responsive-collapse">
 	<ul aria-label="#language ("site-pages")" class="nav" role="menubar">
