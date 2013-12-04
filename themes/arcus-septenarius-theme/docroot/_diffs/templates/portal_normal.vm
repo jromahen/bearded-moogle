@@ -19,7 +19,7 @@ $theme.include($body_top_include)
 #if ($layout.isPrivateLayout())
     #dockbar()
 #else
-#if ($layout.isPublicLayout && $is_signed_in)
+#if ($is_signed_in)
     #dockbar()
 #end
 #end
