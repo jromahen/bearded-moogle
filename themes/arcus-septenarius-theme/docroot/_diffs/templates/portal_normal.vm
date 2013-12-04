@@ -16,7 +16,9 @@
 
 $theme.include($body_top_include)
 
-#dockbar()
+#if ($layout.isPrivateLayout())
+    #dockbar()
+#end
 
  <div class="container-fluid" id="wrapper">
 	<header id="banner" role="banner" class="row-fluid">
@@ -60,7 +62,7 @@ $theme.include($body_top_include)
 	    </div>
 	    <div class="span2 pull-right">
 #if (!$is_signed_in)
-			<a href="$sign_in_url" id="sign-in" rel="nofollow" class="btn btn-primary btn-small">$sign_in_text</a>
+			<a href="http://member.septenarius.com" id="sign-in" rel="nofollow" class="btn btn-primary btn-small">Member's Area</a>
 #end
 	    </div>
 	  </div>
