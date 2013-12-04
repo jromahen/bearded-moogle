@@ -44,6 +44,9 @@
 	}
     }
 
+    .dropdown-menu > li > a {
+	color: $primaryHighlight;
+    }
 
 /*******Portlet************/
 
@@ -66,6 +69,19 @@
 	}
  
 	.portlet-title-text {
+	    vertical-align: middle;
+	}
+    }
+
+    .portlet-topper-toolbar  {
+	> span {	 
+	    &.portlet-close, 
+	    &.portlet-minimize,
+	    &.portlet-maximize {
+		display: none;
+	    }
+	}
+	.caret {
 	    vertical-align: middle;
 	}
     }
