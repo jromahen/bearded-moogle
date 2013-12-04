@@ -18,8 +18,10 @@ $theme.include($body_top_include)
 
 #if ($layout.isPrivateLayout())
     #dockbar()
-#elseif ($layout.isPublicLayout && $is_signed_in)
+#else
+#if ($layout.isPublicLayout && $is_signed_in)
     #dockbar()
+#end
 #end
 
  <div class="container-fluid" id="wrapper">
