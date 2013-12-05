@@ -5,7 +5,7 @@
 <html class="$root_css_class" dir="#language ("lang.dir")" lang="$w3c_language_id">
 
 <head>
-	<title>$the_title - $company_name</title>
+	<title>$the_title - $site_name</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	$theme.include($top_head_include)
 </head>
