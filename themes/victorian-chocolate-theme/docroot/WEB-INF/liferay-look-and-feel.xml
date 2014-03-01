@@ -9,7 +9,7 @@
     <settings>
       <setting key="navigation-enabled" value="true" type="checkbox" configurable="true" />
       <setting key="breadcrumb-enabled" value="true" type="checkbox" configurable="true" />
-      <setting key="heading-logo-location" value="center" type="select" options="left,center,right" configurable="true" />
+      <setting key="heading-logo-location" value="left" type="select" options="left,center,right" configurable="true" />
     </settings>
   </theme>
 </look-and-feel>
