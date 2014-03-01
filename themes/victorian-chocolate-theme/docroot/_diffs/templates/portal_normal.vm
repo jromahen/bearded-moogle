@@ -35,7 +35,8 @@ $theme.include($body_top_include)
 			</h1>
 		</div>
 
-		#if ($has_navigation || $is_signed_in)
+		#if (($has_navigation || $is_signed_in)
+		      && ($navigation_enabled == "true"))
 			#parse ("$full_templates_path/navigation.vm")
 		#end
 	</header>
