@@ -1,0 +1,4 @@
+## Setup custom variables
+#set ($navigation_enabled = $themeDisplay.getThemeSetting("navigation-enabled"))
+#set ($breadcrumb_enabled = $themeDisplay.getThemeSetting("breadcrumb-enabled"))
+#set ($logo_alignment = $themeDisplay.getThemeSetting("heading-logo-location"))
