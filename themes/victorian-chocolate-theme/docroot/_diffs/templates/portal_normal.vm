@@ -41,7 +41,9 @@ $theme.include($body_top_include)
 		#end
 	</header>
 	<div id="content" class="row-fluid">
+	        #if ($breadcrumb_enabled == "true")
 		<nav id="breadcrumbs" class="thumbnail">#breadcrumbs()</nav>
+		#end 
 
 		#if ($selectable)
 			$theme.include($content_include)
